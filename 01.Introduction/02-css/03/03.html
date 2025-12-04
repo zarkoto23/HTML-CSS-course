@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+
+      p.highlight{
+        color: darkcyan;
+      }
+
+      div#special{
+        background-color: orange;
+        box-shadow: 0.1em 0.1em 0.5em 0.1em rgb(0, 0, 0, 0.2)
+      }
+      
+      details[open] summary{
+        font-size: 1.2em;
+        color: green;
+      }
+
+      a{
+        color: goldenrod;
+      }
+      a[href^="/"]{
+        color: palevioletred;
+      }
+
+      p.someclass1.someclass2.someclass3
+      {
+        color: red;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <p class="highlight">This is a highlighted paragraph.</p>
+
+    <p>This is a normal paragraph.</p>
+
+    <div id="special">
+      <p>Special content goes here.</p>
+    </div>
+
+    <ul>
+      <li>Important Item 1</li>
+      <li>Item 2</li>
+      <li>Important Item 3</li>
+    </ul>
+
+    <p> <a href="">Fancy link that Agoes to this page</a></p>
+
+    <p><a href="/">Fancy link that goes to the SoftUni website</a></p>
+
+    <p class="someclass1 someclass2 someclass3">Paragraph with multiple classes!</p>
+
+
+    <details>
+      <summary>why</summary>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam nobis quaerat voluptas in ipsa iusto, id delectus libero debitis accusamus?</p>
+    </details>
+  </body>
+</html>
