@@ -10,115 +10,110 @@
         margin: 0;
         padding: 0;
       }
-
       *,
-      *::before,
-      *::after {
+      *::after,
+      *::before {
         box-sizing: inherit;
       }
 
       html {
         box-sizing: border-box;
-        font-family: Georgia, serif;
-        font-size:clamp(12px, 12px+0.2vw,16px);
+        font-size: 16px;
         line-height: 1.5;
+        font-family: Helvetica, sans-serif;
       }
 
-      img {
-        display: block;
-        width: 100%;
-        height: auto;
+      p,
+      ol,
+      ul {
+        padding-bottom: 1.5rem;
+      }
+      ol,
+      ul {
+        padding-left: 1.5em;
       }
 
-      body,
-      input,
-      textarea,
-      button,
-      select,
-      option {
-        padding: 3em;
-
-        font: inherit;
-      }
-
-      p {
-        padding-bottom: 1.5em;
-      }
-
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        margin-top: 1em;
-        margin-bottom: 0.4em;
-        line-height: 1.1;
-      }
-
-      h1 {
-        font-size: 2em;
-      }
-      h2 {
-        font-size: 1.8em;
-      }
-      h3 {
-        font-size: 1, 6em;
-      }
-      h4 {
-        font-size: 1.4em;
-      }
-      h5 {
-        font-size: 1.2em;
-      }
-      h6 {
-        font-size: 1em;
-      }
+    h1,h2,h3,h4.h5,h6{
+      line-height: 1.2;
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+      font-family: Georgia;
+    }
     </style>
   </head>
   <body>
-    <div class="site">
-      <article>
-        <h1>Heading level 1</h1>
-        <h2>Heading level 2</h2>
-        <h3>Heading level 3</h3>
-        <h4>Heading level 4</h4>
-        <h5>Heading level 5</h5>
-        <h6>Heading level 6</h6>
+    <h1>Heading level 1</h1>
+    <h2>Heading level 2</h2>
+    <h3>Heading level 3</h3>
+    <h4>Heading level 4</h4>
+    <h5>Heading level 5</h5>
+    <h6>Heading level 6</h6>
 
-        <h1>Gravida ipsum molestie ac. Donec ac luctus leo, eget</h1>
-        <p>
-          Aliquam hendrerit egestas orci, at sollicitudin lectus mattis eu. Nunc
-          elementum congue sagittis. Praesent in tempus nisl. Vestibulum
-          consequat dapibus arcu, in ornare felis gravida et. Vestibulum ut diam
-          lacinia, sagittis leo eu, convallis felis. Maecenas sit amet ipsum
-          lobortis, sollicitudin sem a, blandit purus. Nulla vehicula dignissim
-          augue id sagittis. Sed pulvinar erat non fermentum elementum. Quisque
-          volutpat, nunc id congue finibus, dui dolor efficitur nunc, ac
-          interdum lacus lacus in enim. Nullam mattis nulla a magna efficitur,
-          et rhoncus nulla ullamcorper. Mauris fermentum dictum massa vitae
-          porta. Maecenas rutrum augue eu lorem fringilla fringilla. Mauris
-          posuere luctus libero et sodales. Donec posuere pharetra efficitur.
-        </p>
-        <!-- <img src="https://images.unsplash.com/photo-1764790355989-8ec00467f547?q=80&w=1113&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""> -->
+    <ol>
+      <li>
+        sagittis. Sed pulvinar erat non fermentum elementum. Quisque volutpat,
+      </li>
+      <li>
+        nunc id congue finibus, dui dolor efficitur nunc, ac interdum lacus
+        lacus
+      </li>
+      <li>in enim. Nullam mattis nulla a magna efficitur, et rhoncus nulla</li>
+      <li>
+        ullamcorper. Mauris fermentum dictum massa vitae porta. Maecenas rutrum
+      </li>
+      <li>
+        augue eu lorem fringilla fringilla. Mauris posuere luctus libero et
+      </li>
+      <li>sodales. Donec posuere pharetra efficitur.</li>
+    </ol>
 
-        <h2>Aliquam erat volutpat. Donec sodales malesuada purus</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          tempus lorem nibh, quis vehicula quam eleifend vel. Sed sagittis urna
-          a commodo fermentum. Donec fringilla volutpat mi, non ultrices dolor
-          ultrices quis. Quisque vel lectus vel dui fermentum ornare. Mauris at
-          suscipit orci. Sed convallis eget nisl ac fermentum. Ut tincidunt dui
-          velit, ut malesuada nulla lobortis at. Morbi in gravida nulla. Donec
-          ut massa imperdiet, pulvinar nisi quis, auctor dolor. Curabitur sed
-          facilisis nibh, a tincidunt lectus. Duis interdum nibh quis porttitor
-          facilisis. In sit amet nulla sed nibh tristique iaculis eu nec metus.
-        </p>
-        <p>
-          Tempor porta nulla facilisis eu. Sed fermentum viverra tortor ut
-          lacinia.
-        </p>
-      </article>
-    </div>
+    <ul>
+      <li>
+        sagittis. Sed pulvinar erat non fermentum elementum. Quisque volutpat,
+      </li>
+      <li>
+        nunc id congue finibus, dui dolor efficitur nunc, ac interdum lacus
+        lacus
+      </li>
+      <li>in enim. Nullam mattis nulla a magna efficitur, et rhoncus nulla</li>
+      <li>
+        ullamcorper. Mauris fermentum dictum massa vitae porta. Maecenas rutrum
+      </li>
+      <li>
+        augue eu lorem fringilla fringilla. Mauris posuere luctus libero et
+      </li>
+      <li>sodales. Donec posuere pharetra efficitur.</li>
+    </ul>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+      tempus lorem nibh, quis vehicula quam eleifend vel. Sed sagittis urna a
+      commodo fermentum. Donec fringilla volutpat mi, non ultrices dolor
+      ultrices quis. Quisque vel lectus vel dui fermentum ornare. Mauris at
+      suscipit orci. Sed convallis eget nisl ac fermentum. Ut tincidunt dui
+      velit, ut malesuada nulla lobortis at. Morbi in gravida nulla. Donec ut
+      massa imperdiet, pulvinar nisi quis, auctor dolor. Curabitur sed facilisis
+      nibh, a tincidunt lectus. Duis interdum nibh quis porttitor facilisis. In
+      sit amet nulla sed nibh tristique iaculis eu nec metus.
+    </p>
+    <p>
+      Aliquam hendrerit egestas orci, at sollicitudin lectus mattis eu. Nunc
+      elementum congue sagittis. Praesent in tempus nisl. Vestibulum consequat
+      dapibus arcu, in ornare felis gravida et. Vestibulum ut diam lacinia,
+      sagittis leo eu, convallis felis. Maecenas sit amet ipsum lobortis,
+      sollicitudin sem a, blandit purus. Nulla vehicula dignissim augue id
+      sagittis. Sed pulvinar erat non fermentum elementum. Quisque volutpat,
+      nunc id congue finibus, dui dolor efficitur nunc, ac interdum lacus lacus
+      in enim. Nullam mattis nulla a magna efficitur, et rhoncus nulla
+      ullamcorper. Mauris fermentum dictum massa vitae porta. Maecenas rutrum
+      augue eu lorem fringilla fringilla. Mauris posuere luctus libero et
+      sodales. Donec posuere pharetra efficitur.
+    </p>
+
+    <p>Aliquam erat volutpat. Donec sodales malesuada purus</p>
+    <p>Gravida ipsum molestie ac. Donec ac luctus leo, eget</p>
+    <p>
+      Tempor porta nulla facilisis eu. Sed fermentum viverra tortor ut lacinia.
+    </p>
   </body>
 </html>
