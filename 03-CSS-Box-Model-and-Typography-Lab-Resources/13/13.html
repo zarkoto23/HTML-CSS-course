@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+    section{
+        border: 2px solid black;
+        padding: 2em;
+        position: relative;
+    }
+    .item{
+        border: 1px solid black;
+        padding: 0.5em;
+        width: 5em;
+        height: 5em;
+    }
+    #second-relative{
+        position: relative;
+        left: 5em;
+        top: 2em;
+        background: lightgreen;
+  
+    }
+    #second-abs-rel{
+        position: absolute; 
+       
+        background: lightgreen; */
+    }
+    </style>
+  </head>
+  <body>
+    <h2>Position Static</h2>
+    <section>
+        
+<div class="item">1</div>
+<div class="item">2</div>
+<div class="item">3</div>
+    </section>
+    <h2>Position Relative</h2>
+    <section>
+        <div class="item">1</div>
+<div class="item" id="second-relative">2</div>
+<div class="item">3</div>
+    </section>
+    <h2>Position Relative + Absolute</h2>
+    <section>
+        
+<div class="item">1</div>
+<div class="item" id="second-abs-rel">2</div>
+<div class="item">3</div>
+    </section>
+</body>
+</html>
+
