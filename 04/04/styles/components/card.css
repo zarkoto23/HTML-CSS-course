@@ -1,0 +1,25 @@
+.card{
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+    color: black;
+    text-decoration: none;
+    background-color: #e2dada;
+    box-shadow: 0 0 1em 0 egb(0,0,0,0.2);
+    border-radius: 0.3em;
+    overflow: hidden;
+}
+
+.card span, .card strong{
+    display: block;
+
+}
+
+
+.card .media{
+    margin-bottom: 1em;
+}
+
+.card .main{
+
+}
