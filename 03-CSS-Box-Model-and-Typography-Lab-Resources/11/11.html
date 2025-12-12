@@ -15,11 +15,23 @@
       *::after {
         box-sizing: inherit;
       }
+
+      :root {
+        --fs-body: clamp(0.8075rem, 0.5417rem + 0.8092vw, 1.5rem);
+        --fs-heading-6: clamp(0.8594rem, 0.6958rem + 0.8177vw, 1.35rem);
+        --fs-heading-5: clamp(1.0742rem, 0.8923rem + 0.9096vw, 1.62rem);
+        --fs-heading-4: clamp(1.3428rem, 1.1424rem + 1.002vw, 1.944rem);
+        --fs-heading-3: clamp(1.6785rem, 1.4604rem + 1.0906vw, 2.3328rem);
+        --fs-heading-2: clamp(2.0981rem, 1.8643rem + 1.1688vw, 2.7994rem);
+        --fs-heading-1: clamp(2.6226rem, 2.3771rem + 1.2277vw, 3.3592rem);
+      }
       html {
         box-sizing: border-box;
         font-family: Helvetica, sans-serif;
-        font-size: 16px;
+        font-size: var(--fs-body, 12px);
         line-height: 1.5;
+        max-width: 100ch;
+        padding-left: 5em;
       }
       body,
       input,
@@ -28,6 +40,7 @@
       select,
       option {
         font: inherit;
+        
       }
 
       p,
@@ -54,22 +67,22 @@
       }
 
       h1 {
-        font-size: 2em;
+        font-size: var(--fs-heading-1);
       }
       h2 {
-        font-size: 1.8em;
+        font-size: var(--fs-heading-2);
       }
       h3 {
-        font-size: 1.6em;
+        font-size: var(--fs-heading-3);
       }
       h4 {
-        font-size: 1.4em;
+        font-size: var(--fs-heading-4);
       }
       h5 {
-        font-size: 1.2em;
+        font-size: var(--fs-heading-5);
       }
       h6 {
-        font-size: 1em;
+        font-size: var(--fs-heading-6);
       }
 
       ul,

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+        box-sizing: border-box;
+        }
+
+        .box-model{
+            max-width: 600px;
+            margin: 3em auto;
+            
+        }
+        .box-model div{
+            border: 1px dashed black;
+            padding: 2em;
+        }
+div{
+    position: relative;
+
+}
+
+span{
+    position: absolute;
+    text-transform: lowercase;
+    top:0;
+    left: 1em;
+}
+
+.margin{
+    background-color: lightsalmon;
+}
+        
+.border{
+    background-color: lightgoldenrodyellow;
+}
+
+.padding{
+    background-color: lightgreen;
+}
+
+.content{
+    background-color: lightsteelblue;
+    text-align: center;
+}
+        
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="box-model">
+      <div class="margin">
+        <span>Margin</span>
+        <div class="border">
+          <span>Border</span>
+          <div class="padding">
+            <span>Padding</span>
+            <div class="content">Content</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
