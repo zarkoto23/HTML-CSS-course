@@ -11,6 +11,45 @@
             box-sizing: border-box;
         }
 
+        .box-model{
+            max-width: 580px;
+            margin: 3em auto;
+            
+        }
+
+        .box-model div{
+            border: 1px dashed black;
+            padding: 2em;
+            position: relative;
+        }
+
+        .box-model span{
+            display: block;
+            text-transform: lowercase;
+            position: absolute;
+            top: 0;
+            left: 1em;
+            z-index: 1;
+
+        }
+        
+        .box-model .content{
+            text-align: center;
+            background-color: rgb(102, 211, 205);
+        }
+
+        .box-model .padding{
+            background-color: lightgreen;
+        }
+             .box-model .padding{
+            background-color: lightgreen;
+
+        }     .box-model .border{
+            background-color: lightpink;
+        }
+             .box-model .margin{
+            background-color: coral;
+        }
     </style>
 </head>
 <body>
@@ -18,9 +57,9 @@
     <div class="box-model">
 
         
-        <div class="margin">Margin
-            <div class="border">Border
-                <div class="padding">Paddin
+        <div class="margin"><span>Margin</span>
+            <div class="border"><span>Border</span>
+                <div class="padding"><span>Paddin</span>
                     <div class="content">Content</div>
                 </div>
             </div>
