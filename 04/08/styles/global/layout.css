@@ -1,0 +1,10 @@
+body {
+    padding: 2em;
+    background: rgb(236, 226, 226);
+
+}
+
+.site {
+    max-width: 66ch;
+    margin: 0 auto;
+}
