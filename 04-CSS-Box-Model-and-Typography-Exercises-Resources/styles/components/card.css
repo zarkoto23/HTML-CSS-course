@@ -12,6 +12,20 @@
 
 .card .media {
     margin-bottom: 1.5em;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    position: relative;
+
+}
+.card .media img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+.card .media img.landscape{
+    width: auto;
+    height: 100%;
 }
 
 .card span,.card strong{
@@ -43,4 +57,6 @@
     font-style: italic;
     opacity: 0.7;
 }
+
+
 
