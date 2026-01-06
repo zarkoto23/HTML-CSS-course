@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            padding: 1em;
+
+        }
+
+    .site{
+        border: 1px solid rgb(141, 180, 67);
+        max-width: 600px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+     .site > *{
+        border: 2px solid black;
+        padding: 0.5em  ;
+
+
+    } 
+    .site .site-header,
+    .site .site-footer{
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 100%;
+
+        /* flex: 1 0 100% */
+    }
+
+    .site .site-content{
+        flex-grow: 1;
+    }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="site">
+        <header class="site-header">
+            <p>Header</p>
+        </header>
+
+        <main class="site-content">
+            <p>Main content</p>
+        </main>
+
+        <aside class="side-sidebar">
+            <p>Sidebar</p>
+        </aside>
+
+        <footer class="site-footer">
+            <p>Footer</p>
+        </footer>
+    </div>
+
+
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+body{
+  padding: 2em;
+  border: 2px solid black;
+  
+}
+
+
+.flex-container{
+  display: flex;
+  border: 2px solid rgb(55, 22, 204);
+  padding: 1em;
+  max-width: 66ch;
+
+}
+
+.flex-item{
+  display: flex;
+  padding: 2em;
+  border: 1px solid black;
+  background-color: lightgray;
+}
+
+.flex-wrap-nowrap{
+  flex-wrap: nowrap;
+}
+
+.flex-wrap-wrap{
+  flex-wrap: wrap;
+}
+.flex-wrap-wrap-reverse{
+  flex-wrap: wrap-reverse;
+}

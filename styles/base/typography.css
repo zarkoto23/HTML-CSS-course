@@ -1,20 +1,22 @@
-/* @link https://utopia.fyi/type/calculator?c=320,12,1.125,1280,16,1.2,6,0,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 
 :root {
-    --fs-body: clamp(0.75rem, 0.6667rem + 0.4167vw, 1rem);
+    /* @link https://utopia.fyi/type/calculator?c=320,11,1.2,1240,18,1.25,6,0,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
-    --fs-heading-6: clamp(0.8438rem, 0.725rem + 0.5938vw, 1.2rem);
-    --fs-heading-5: clamp(0.9492rem, 0.7856rem + 0.818vw, 1.44rem);
-    --fs-heading-4: clamp(1.0679rem, 0.8478rem + 1.1002vw, 1.728rem);
-    --fs-heading-3: clamp(1.2014rem, 0.9106rem + 1.4537vw, 2.0736rem);
-    --fs-heading-2: clamp(1.3515rem, 0.9726rem + 1.8947vw, 2.4883rem);
-    --fs-heading-1: clamp(1.5205rem, 1.032rem + 2.4425vw, 2.986rem);
+    --fs-body: clamp(0.6875rem, 0.5788rem + 0.5435vw, 1rem);
+    --fs-heading-6: clamp(0.7734rem, 0.6251rem + 0.7418vw, 1.2rem);
+    --fs-heading-5: clamp(0.8701rem, 0.6719rem + 0.9911vw, 1.44rem);
+    --fs-heading-4: clamp(0.9789rem, 0.7183rem + 1.3028vw, 1.728rem);
+    --fs-heading-3: clamp(1.1012rem, 0.763rem + 1.6911vw, 2.0736rem);
+    --fs-heading-2: clamp(1.2389rem, 0.8043rem + 2.1729vw, 2.4883rem);
+    --fs-heading-1: clamp(1.3938rem, 0.8399rem + 2.7691vw, 2.986rem);
 }
 
 html {
-    font-family: Georgia, serif;
-    font-size: var(--fs-body, 12px);
-    line-height: 1.4;
+    font-family: Lato, sans-serif;
+    font-size: var(--fs-body);
+    line-height: 1.5;
 }
 
 body,
@@ -24,23 +26,17 @@ button,
 select,
 option {
     font: inherit;
-
 }
 
-p,
-ol,
-ul {
+p,ul,ol {
     padding-bottom: 1.5em;
 }
-
-ol,
-ul {
+ul,ol{
     padding-left: 2em;
     line-height: 1.3;
 }
 
-ul li,
-ol li {
+ul li, ol li{
     padding-bottom: 0.3em;
 }
 
@@ -50,44 +46,49 @@ h3,
 h4,
 h5,
 h6 {
-    margin-top: 1em;
+    /* margin-top: 1em; */
     margin-bottom: 0.4em;
     line-height: 1.1;
 }
 
+
 h1 {
-    font-size: var(--fs-heading-1);
+    font-size: var(--fs-heading-1)
 }
 
 h2 {
-    font-size: var(--fs-heading-2);
+    font-size: var(--fs-heading-2)
 }
 
 h3 {
-    font-size: var(--fs-heading-3);
+    font-size: var(--fs-heading-3)
 }
 
 h4 {
-    font-size: var(--fs-heading-4);
+    font-size: var(--fs-heading-4)
 }
 
 h5 {
-    font-size: var(--fs-heading-5);
+    font-size: var(--fs-heading-5)
 }
 
 h6 {
-    font-size: var(--fs-heading-6);
+    font-size: var(--fs-heading-6)
 }
 
-blockquote {
-    border-left: darkgrey 4px solid;
+:is(h1, h2, h3, h4, h5, h6):not(:first-child){
+    margin-top: 1em;
+}
+
+
+blockquote{
+    border-left: 4px solid grey;
     margin-bottom: 1.5em;
     padding-left: 2em;
     font-style: italic;
-
-    line-height: 3;
 }
 
-blockquote p:last-child {
+blockquote p:last-child{
     padding: 0;
 }
+

@@ -1,0 +1,31 @@
+body{
+  padding: 2em;
+  max-width: 66ch;
+}
+
+.flex-container{
+  display: flex;
+  border: 2px solid blue ;
+  padding: 2em;
+}
+
+
+.flex-item{
+  display: flex;
+  border: 2px solid black;
+  padding: 1em;
+  background-color: lightgray;
+
+
+}
+
+.flex-direction-row-reverse{
+  flex-direction: row-reverse;
+}
+
+.flex-direction-column{
+  flex-direction: column;
+}
+.flex-direction-column-reverse{
+  flex-direction: column-reverse;
+}
