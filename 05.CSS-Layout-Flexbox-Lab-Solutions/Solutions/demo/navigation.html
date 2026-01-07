@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        padding: 2em;
+      }
+
+      a {
+        color: #369;
+        text-decoration: none;
+      }
+      .section {
+        padding: 0 calc((100% - 700px) / 2);
+      }
+      .section.site-header {
+        display: flex;
+        align-items: center;
+      }
+
+      .section.site-header nav {
+        margin: 0 auto;
+      }
+
+      nav ul {
+        display: flex;
+        gap: 1em;
+      }
+
+      nav ul li {
+        display: block;
+        /* border: 1px solid black;   */
+        /* padding: 0 0.5em; */
+      }
+
+      nav ul li a {
+        display: block;
+        padding: 0.5em 0.8em;
+        border: 1px solid rgb(68, 102, 153);
+        border-radius: 0.5em;
+        background-color: rgb(172, 185, 185);
+
+        
+
+        transition: background-color 0.3s ease-in,
+         color 0.3s ease-in,
+          box-shadow 0.3s ease-in,
+          scale 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: rgb(255, 255, 255);
+        background-color: #469;
+        box-shadow: 0 0 1em 0.3em rgba(68, 102, 153, 0.8);
+          scale: 1.1;
+          border: none;
+
+      }
+    </style>
+    <html>
+      <body>
+        <header class="section site-header">
+          <h1><a href="#">Site Logo</a></h1>
+
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contacts</a></li>
+            </ul>
+          </nav>
+
+          <a href="#" class="button primary">CallUs</a>
+        </header>
+      </body>
+    </html>
+  </head>
+</html>
