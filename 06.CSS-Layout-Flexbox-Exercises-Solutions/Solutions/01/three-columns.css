@@ -6,82 +6,98 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     font-family: Lato, sans-serif;
+    font-size: 14px;
+    line-height: 1.4em;
 }
-body{
-    background: rgb(219, 218, 218);
+
+
+
+body {
+    background-color: rgb(240, 240, 240);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
-
-.section{
-    background: white;
-    max-width: 100ch;
-    margin: 0 auto;
-    box-shadow: 0 0 1em 0 rgb(0, 0, 0,0.2);
+.section {
+    background-color: white;
     border-radius: 0.3em;
-    padding: 1.5em 2em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+    max-width: 130ch;
+    padding: 2em 4em;
+    /* margin: 0 auto; */
 }
 
-.section header, 
-.section footer{
-    margin: 0 auto;
+
+header,
+footer {
     text-align: center;
+    margin: 0 auto;
 }
 
-section header p,
-section footer p{
-    opacity: 0.5;
+h2 {
+    padding-bottom: 0.5em;
 }
 
-.section header{
+h3{
+    padding-bottom: 0.5em;
+}
+
+header p {
     max-width: 45ch;
-}
-
-.section footer{
-    max-width: 75ch;
-}
-header p{
     font-style: italic;
-    font-weight: 500;
-}
-
-header h2{
-    margin-bottom: 0.5em;
-}
-footer p{
-    margin-top: 1em;
+    font-size: 16px;
+    font-weight: 600;
+    opacity: 0.5;
+    margin: 0 auto;
 }
 
 
-.flex-container{
-    margin: 2em;
+
+.flex-container {
+    padding: 2em 0;
     display: flex;
+    gap: 2.5em;
     flex-wrap: wrap;
-    gap: 2em;
+
+
+
 }
 
-.flex-item{
-    flex-shrink: 0;
-    flex-grow: 1;
-    flex-basis: 20ch;
+.flex-item {
+    flex-wrap: wrap;
+    margin:  0 auto;
+
+    display: flex;
+    flex-basis: auto;
+    /* max-width: 35ch; */
+    flex-basis: 35ch;
+
+
 }
 
-header::after,
-footer::before{
+footer {
+    opacity: 0.5;
+    font-weight: 550;
+    max-width: 86ch;
 
+}
+
+header p::after,
+footer::before {
+    border: 1.5px solid black;
     content: '';
-    background: rgb(231, 225, 225);
-    height: 2px;
-    width: 4em;
-    margin: 2em auto;
     display: block;
+    max-width: 8ch;
+    margin: 1.5em auto;
+    opacity: 0.2;
 
+}
 
+header p::after {
+    margin: 1.5em auto;
 }
