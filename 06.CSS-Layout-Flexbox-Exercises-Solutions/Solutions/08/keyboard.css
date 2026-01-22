@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+body {
+    background-color: rgb(221, 214, 214);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.keyboard {
+    --spacing: 0.7em;
+    border: 1px solid #948e8e;
+    padding: 1em 1.5em;
+    border-radius: 0.4em;
+    background: #71c8eb;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+    box-shadow: 0 0.2em 0 0 rgb(0, 0, 0, 0.3);
+
+}
+
+.key-row {
+    display: flex;
+    /* border: solid red 1px; */
+    gap: var(--spacing);
+    /* margin-bottom: 0.5em; */
+}
+
+.key:not(.special) {
+    color: red;
+    flex-basis: 3ch;
+    justify-content: center;
+}
+
+/* {
+    height: 4ch;
+
+} */
+
+
+.key {
+
+    background-color: white;
+    display: flex;
+    padding: 0.5em 0.8em;
+    flex: 1 1 auto;
+    text-align: center;
+    border: 1px rgb(174, 174, 189) solid;
+    border-radius: 0.3em;
+    box-shadow: 0 0.2em 0 0 rgb(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
+
+
+}
+
+.key:active {
+    position: relative;
+    box-shadow: none;
+    top: 0.15em;
+    background: #d4cbcb;
+}
+
+.special {
+    background-color: #948686;
+}
+
+.key-row:last-child {
+    display: flex;
+    flex-grow: 1;
+}
+
+
+.keyboard .key-space {
+    flex-basis: 50%;
+}
+
+.key-row:nth-child(4) {
+    padding-right: 4em;
+}
+
+.keyboard .key-enter{
+    border-bottom-right-radius: 0;
+}
+
+.keyboard .key-enter::after {
+    display: block;
+    content: '';
+    width: 5.7ch;
+    height: 5.3ch;
+    position: absolute;
+    top: calc(100% - 0px);
+    right: -1px;
+    background: inherit;
+    border: 1px rgb(174, 174, 189) solid;
+    border-top: none;
+    border-radius: 0.3em;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    box-shadow: inherit;
+}
+
+.function-keys .key {
+    padding-block: 0.1em;
+    width: 4ch;
+    justify-content: center;
+}
