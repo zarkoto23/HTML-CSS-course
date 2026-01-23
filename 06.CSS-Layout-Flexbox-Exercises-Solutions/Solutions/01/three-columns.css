@@ -21,66 +21,58 @@ body {
     justify-content: center;
 }
 
-.section {
-    margin: 0 auto;
+.section{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(185, 176, 176);
+    background-color: rgb(255, 255, 255);
+    padding: 1.5em 2em;
     max-width: 130ch;
-    background-color: white;
-    padding: 1em 3em;
-    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
     border-radius: 0.3em;
+    box-shadow: 0 0.1em 0.3em 0 rgb(0, 0, 0, 0.2);
 }
-
-.section.columns header,
-.section.columns footer {
-    text-align: center;
-    margin: 0 auto;
-}
-
-.section.columns header {
-    max-width: 45ch;
-}
-
-
-
-.section.section.columns header h2 {
-    margin-bottom: 0.5em;
-}
-
-.section.section.columns header p {
-    font-style: italic;
-    opacity: 0.6;
+header{
+  
+text-align: center;
 
 }
 
-.section.columns footer {
-    max-width: 75ch;
-    opacity: 0.6;
+header p{
+max-width: 45ch;
+margin: 0 auto;
+padding: 1.5em 0; 
+opacity: 0.5;
+font-style: italic;
+
 }
 
-.section.columns .flex-container{
-    margin: 2em 0;
-    /* border: solid 2px black; */
+
+.flex-container{
     display: flex;
     gap: 2em;
-    flex-wrap: wrap;
-}
-
-.section.columns .flex-item{
-    flex-basis: 30ch;
-    flex-shrink: 0;
-    flex-grow: 1;
 }
 
 
-.section.columns header::after,
-.section.columns footer::before{
-    width: 4em;
-    content: "";
-    display: block;
-    height: 2px;
-    margin: 2em auto;
-    opacity: 0.2;
-    font-weight: 500;
-    background-color: black;
+footer{
+    margin: 0 auto;
+    max-width: 78ch;
+    text-align: center;
+    padding-top: 2em;
+}
+footer p{
+    opacity: 0.5;
+    font-style: italic;
+}
+
+
+
+header p::after,footer p::before{
+content: "";
+display: block;
+border: 0.1em solid black;
+max-width: 8ch;
+opacity: 0.1;
+border-radius: 0.3em;
+margin: 1.5em auto;
 
 }
