@@ -11,13 +11,14 @@ html {
 }
 
 body {
-    background: rgb(221, 214, 214);
+    background: rgb(233, 233, 233);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2em;
+
 }
 
 body>* {
@@ -25,95 +26,133 @@ body>* {
 }
 
 .section {
-    margin: 0 auto;
-    max-width: 120ch;
-    background: white;
-    padding: 1.5em 1.2em;
-    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 90%;
+    padding: 0.2em;
+
+    border: 1px solid rgb(173, 162, 162);
     border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.3);
+
+    max-width: 130ch;
+
+    min-width: fit-content;
+
+
+
+
+
+}
+
+.section>* {
     display: flex;
-    /* flex-wrap: wrap; */
-    gap: 1em;
-}
+    justify-content: center;
+    text-decoration: none;
 
-
-
-.calendar {
-    display: flex;
-    gap: 0;
-}
-
-.calendar>* {
-    border: 1px solid grey;
-    flex: 1 1 auto;
-}
-
-.calendar .main,
-.calendar .aside {
-    display: flex;
-    flex-direction: column;
-
-
-
-}
-
-
-.calendar .main>*,
-.calendar .aside>* {
     flex-grow: 1;
 
+    background-color: white;
+    border-radius: 0.3em;
 
 
 }
 
-.calendar .row header {
+
+
+
+.section .aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    align-self: stretch;
+
+    border: 1px solid rgb(155, 151, 151);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+
+
+
+
+}
+
+.section .aside>* {
+    flex: 1;
+}
+
+
+.section .aside div {
+    border: 1px solid rgb(155, 151, 151);
+
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1em;
-    border: 1px solid lightgray;
-}
-
-.calendar .row header h2 {
-    font-size: 1em;
-    font-weight: normal;
-
-}
-
-.calendar .aside {
-    flex-basis: 30ch;
-
-}
-
-.calendar .aside>* {
-    flex-grow: 1;
-}
-
-.calendar .aside div {
-    padding: 1em;
-    border: 1px solid #ccc;
     text-align: center;
+
+
+
+
 }
 
-.calendar .row {
-    display: flex;
+
+
+
+
+.section .main {
     flex-direction: column;
+
+
+    border: 1px solid rgb(155, 151, 151);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    flex-basis: 60%;
+
+
+
 }
 
-.calendar .row>*{
-    flex-grow: 1;
-}
-
-.calendar .row>ul {
+.section ul {
     display: flex;
+
+    align-items: center;
+
+
+
 }
 
-.calendar .row>ul li {
-    flex: 1 1 auto;
+.section h3,
+.section li {
+
+    border: solid rgb(170, 170, 170) 1px;
+    border-right: 0;
+
+
+
+}
+
+.aside h3 {
+    border: 0;
+}
+
+
+.section header h3 {
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1em;
-    border: 1px solid lightgray;
+}
 
+.section li {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 0;
+    min-width: 0;
+    list-style: none;
+    padding: 0 1.9em;
 }
