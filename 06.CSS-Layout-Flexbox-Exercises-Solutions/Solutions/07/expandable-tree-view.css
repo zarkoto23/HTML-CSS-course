@@ -1,0 +1,114 @@
+ol*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
+
+body>*{
+    padding: 2em;
+}
+
+.tree,
+.tree ul{
+    list-style: none;
+    padding-left: 1em;
+}
+
+.tree li{
+    margin: 0.5em;
+    position: relative;
+}
+
+
+.tree li:not(.planet)::before {
+  content: "";
+  position: absolute;
+  top: 0.7em;
+  left: -0.7em;
+  width:0.8em;
+  height: 0.2em;
+  background: #cfd3d8;
+}
+
+.tree > li::before {
+  display: none;
+}
+
+
+
+.planet::before{
+      content: "";
+  position: absolute;
+  top: 0.5em;
+  left: -0.7em;
+  width:0.8em;
+  height: 0.2em;
+  background: #cfd3d8;
+
+}
+summary:first-child::after(.giant){
+    content: "";
+  position: absolute;
+  top: 0.8em;
+  left: 0.6em;
+  /* overflow: hidden; */
+  width:0.2em;
+  height: 3.6em;
+  background: #cfd3d8;
+}
+.giant > summary::after {
+
+    opacity: 0;
+    content: "";
+  position: absolute;
+  top: 1.2em;
+  left: 0.6em;
+  /* overflow: hidden; */
+  width:0.2em;
+  height: 7.2em;
+  background: #cfd3d8;
+}
+
+.gas-ice::after {
+    content: "";
+  position: absolute;
+  top: 1.2em;
+  left: 0.6em;
+  /* overflow: hidden; */
+  width:0.2em;
+  height: 3.15em;
+  background: #cfd3d8;
+}
+
+
+summary{
+    list-style: none;
+      cursor: pointer;
+      /* position: relative; */
+
+
+}
+
+details[open] ::after{
+    opacity: 1;
+}
+
+
+
+
+
+svg{
+    width:1.4em;
+    fill: green;
+    
+
+}
+

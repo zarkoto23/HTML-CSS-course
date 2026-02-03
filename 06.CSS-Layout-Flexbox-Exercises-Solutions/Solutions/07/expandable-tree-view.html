@@ -1,42 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Expandable Tree View</title>
-    <link rel="stylesheet" href="expandable-tree-view.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="expandable-tree-view.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
     <h1>Collapsable & expandable tree view in HTML & CSS only</h1>
 
     <ul class="tree">
-        <li>
-            <details open>
-                <summary>Giant planets</summary>
+      <li>
+        <details open class="giant">
+          <summary >
+            <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+              <path
+                d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM296 408L296 344L232 344C218.7 344 208 333.3 208 320C208 306.7 218.7 296 232 296L296 296L296 232C296 218.7 306.7 208 320 208C333.3 208 344 218.7 344 232L344 296L408 296C421.3 296 432 306.7 432 320C432 333.3 421.3 344 408 344L344 344L344 408C344 421.3 333.3 432 320 432C306.7 432 296 421.3 296 408z"
+              />
+            </svg>
+            Giant planets
+          </summary>
+          <ul>
+            <li>
+              <details open>
+                <summary class="gas-ice">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                    <path
+                      d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM296 408L296 344L232 344C218.7 344 208 333.3 208 320C208 306.7 218.7 296 232 296L296 296L296 232C296 218.7 306.7 208 320 208C333.3 208 344 218.7 344 232L344 296L408 296C421.3 296 432 306.7 432 320C432 333.3 421.3 344 408 344L344 344L344 408C344 421.3 333.3 432 320 432C306.7 432 296 421.3 296 408z"
+                    />
+                  </svg>
+                  Gas giants
+                </summary>
                 <ul>
-                    <li>
-                        <details open>
-                            <summary>Gas giants</summary>
-                            <ul>
-                                <li>Jupiter</li>
-                                <li>Saturn</li>
-                            </ul>
-                        </details>
-                    </li>
-                    <li>
-                        <details>
-                            <summary>Ice giants</summary>
-                            <ul>
-                                <li>Uranus</li>
-                                <li>Neptune</li>
-                            </ul>
-                        </details>
-                    </li>
+                  <li class="planet">Jupiter</li>
+                  <li class="planet">Saturn</li>
                 </ul>
-            </details>
-        </li>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary class="gas-ice">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                    <path
+                      d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM296 408L296 344L232 344C218.7 344 208 333.3 208 320C208 306.7 218.7 296 232 296L296 296L296 232C296 218.7 306.7 208 320 208C333.3 208 344 218.7 344 232L344 296L408 296C421.3 296 432 306.7 432 320C432 333.3 421.3 344 408 344L344 344L344 408C344 421.3 333.3 432 320 432C306.7 432 296 421.3 296 408z"
+                    />
+                  </svg>
+                  Ice giants
+                </summary>
+                <ul>
+                  <li class="planet">Uranus</li>
+                  <li class="planet">Neptune</li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </details>
+      </li>
     </ul>
-
-</body>
+  </body>
 </html>
