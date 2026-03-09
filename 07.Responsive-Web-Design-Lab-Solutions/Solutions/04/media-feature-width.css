@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2em;
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+body::before {
+    background: #369;
+    color: #fff;
+    padding: 1em 1.5em;
+    margin-bottom: 2em;
+    border-radius: 0.3em;
+}
+
+p {
+    padding-bottom: 1.5em;
+}
+
+         
+@media(min-width:800px){
+    body::before{
+        display: block;
+        content: 'vw is larger thand 800px';
+        
+    }
+}
+
+@media (max-width:800px){
+    body::before{
+        display: 'block';
+        content:"smaller than 800px"
+    }
+}
