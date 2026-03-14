@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+/* 18px */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap');
+/* 16px 90 for bih title */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+
+
+
+    max-width: 1920px;
+    margin: 0 auto;
+
+    min-height: 100vh;
+
+}
+
+body>* {
+    /* height: 100vh; */
+
+}
+
+.background {
+
+    background-image: url('images/poster.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+    background-size: 100% 100%;
+
+
+
+    z-index: -1;
+}
+
+html {
+    font-family: 'Karla';
+    font-size: 18px;
+    color: white;
+}
+
+.dark-bgrd {
+    background-color: #E14747;
+    color: white;
+}
+
+.light-bgrd {
+    background-color: #F8F0E9;
+    color: #352B2A;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+section>* {
+    max-width: 1300px;
+}
+
+.logo {
+    width: 120px;
+    height: auto
+}
+
+header,
+footer {
+    padding: 0 3em;
+    width: 100%;
+}
+
+header>*,
+.banner>*,
+footer>* {
+    color: #FFFFFF;
+
+}
+
+footer {
+    background-color: #352B2A;
+}
+
+.banner h1 {
+    font-family: 'Cormorant Infant';
+    font-size: 110px;
+    color: #FFFFFF;
+    padding-top: 2em;
+    font-weight: bolder;
+
+}
+
+.banner p {
+
+    font-size: 1.25em;
+    max-width: 55ch;
+    text-align: center;
+    margin-top: 6em;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8em 5em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3em;
+
+    font-family: 'Karla';
+    font-size: 1.2em;
+    list-style: none;
+
+
+}
+
+
+.customer-testimonial div {
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+    justify-content: flex-start;
+
+}
+
+
+
+
+.customer-testimonial p:first-child {
+    padding-top: 2em;
+    font-size: 1.3em;
+    padding-left: 4.5em;
+
+}
+
+
+.customer-testimonial p+p {
+    padding: 1.2em 1.5em;
+
+    font-family: 'Cormorant Infant';
+    font-size: 4em;
+    line-height: 0.8em;
+    font-style: italic;
+    padding-bottom: 2.2em;
+    font-weight: 600;
+
+}
+
+
+
+
+
+.support-div {
+    max-width: 50ch;
+    text-align: center;
+    padding: 3em;
+
+}
+
+.support-div h2 {
+    padding-top: 1em;
+    font-size: 1.6em;
+}
+
+.support-div p {
+    padding: 2em;
+
+    font-size: 1.3em;
+    line-height: 1.4em;
+}
+
+.understand-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4.8em 19em;
+    /* overflow: hidden; */
+
+}
+
+.understand-div img {
+    width: 630px;
+    height: 470px;
+    object-fit: cover;
+}
+
+.understand-div h2 {
+    text-align: center;
+    padding: 1.2em 0;
+    font-family: 'Cormorant Infant';
+    font-size: 4.2em;
+    line-height: 1em;
+}
+
+.understand-div p {
+    font-size: 1.2em;
+    padding: 0;
+    line-height: 1.5em;
+}
+
+.understand-div button {
+    padding: 0.7em 1.7em;
+    font-size: 0.9em;
+    border-radius: 0.3em;
+    border: 1px solid black;
+    margin-top: 4.5em;
+    background-color: white;
+}
+
+.understand-div .read-more {
+
+    align-self: flex-start;
+
+}
+
+.local-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 4em; */
+}
+
+.local-div h2 {
+    font-family: 'Cormorant Infant';
+    font-size: 4em;
+    padding-top: 2em;
+}
+
+.local-div p {
+    max-width: 80ch;
+    /* padding: 5em; */
+    text-align: center;
+    font-size: 1.25em;
+    padding: 4.5em 0;
+}
+
+
+.local-div button {
+    width: 190px;
+    height: 60px;
+    border: none;
+
+    background-color: #FAD87A;
+
+    border-radius: 50px;
+    font-size: 0.9em;
+    text-align: center;
+
+    margin-bottom: 6em;
+
+
+
+
+}
+
+.footer-div {
+    padding: 3.5em 5.5em;
+}
+
+.footer-div img {
+    width: 80px;
+    height: auto
+}
+
+.footer-div p {
+    padding: 1.7em 1.4em 0 0;
+    max-width: 48ch;
+}
+
+.footer-div p:last-child {
+    color: #6A6468;
+
+    font-size: 0.85em;
+}
