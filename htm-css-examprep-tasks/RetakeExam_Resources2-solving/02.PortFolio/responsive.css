@@ -1,0 +1,54 @@
+@media (width<=600px){
+
+
+
+    body{
+        
+    }
+
+    .container-fluid{
+
+        display: flex;
+        flex-direction: column;
+        
+     
+    }
+
+    .container-fluid ul{
+        display: none;
+
+    }
+
+    .checkbtn{
+        display: block;
+        order: 20;
+    }
+
+.site-header i {
+    /* position: absolute; */
+    top:38%;
+    left:45%;
+}
+
+.about{
+    display: flex;
+
+    align-items: center;
+
+    
+}
+
+.about-header{
+    margin-top: 140px;
+}
+
+
+
+.gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+}
